@@ -33,7 +33,7 @@ if(WIN32)
 endif(WIN32)
 
 if(NOT WIN32)
-    target_link_libraries(Camera-Movement ${LIBS} Xrandr rt)
+    target_link_libraries(Camera-Movement ${LIBS} X11 Xrandr rt)
 endif(NOT WIN32)
 
 if(WIN32)
